@@ -8,6 +8,7 @@ unico ys n =
     if (frequencia ys n == 1)
         then True
         else False
+        
 main = do
     line1 <- getLine
     line2 <- getLine

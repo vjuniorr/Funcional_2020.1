@@ -4,6 +4,7 @@ menorDeTres x y z =
         else if x < y && x < z
             then x
             else y
+            
 main = do
     line1 <- getLine
     line2 <- getLine

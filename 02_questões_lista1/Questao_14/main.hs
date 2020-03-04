@@ -1,5 +1,6 @@
 corpo xs =
     init xs
+    
 main = do
     line1 <- getLine
     

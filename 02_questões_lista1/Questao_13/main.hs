@@ -1,5 +1,6 @@
 calda xs =
     tail xs
+    
 main = do
     line1 <- getLine
     

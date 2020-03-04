@@ -1,5 +1,6 @@
 sequencia n m =
     [m .. (m + n - 1)]
+    
 main = do
     line1 <- getLine
     line2 <- getLine

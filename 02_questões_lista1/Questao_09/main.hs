@@ -4,6 +4,7 @@ frequencia xs x =
         else if((head xs) == x)
             then 1 + frequencia (tail xs) x
             else 0 + frequencia (tail xs) x
+            
 main = do
     line1 <- getLine
     line2 <- getLine
