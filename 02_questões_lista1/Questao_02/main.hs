@@ -1,9 +1,7 @@
-menorDeTres x y z =
-    if z < y && z < x 
-        then z
-        else if x < y && x < z
-            then x
-            else y
+menorDeTres x y z 
+  | z < y && z < x = z
+  | x < y && x < z = x
+  | otherwise = y
             
 main = do
     line1 <- getLine

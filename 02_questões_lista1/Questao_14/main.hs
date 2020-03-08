@@ -1,5 +1,4 @@
-corpo xs =
-    init xs
+corpo xs = init 
     
 main = do
     line1 <- getLine
