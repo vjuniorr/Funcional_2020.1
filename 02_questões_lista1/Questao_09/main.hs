@@ -1,9 +1,7 @@
-frequencia xs x =
-    if(null xs)
-        then 0
-        else if((head xs) == x)
-            then 1 + frequencia (tail xs) x
-            else 0 + frequencia (tail xs) x
+frequencia x [] = 0
+frequencia x xs 
+    | head xs == x = 1 + frequencia x (tail xs)
+    | otherwise = frequencia x (tail xs)
             
 main = do
     line1 <- getLine

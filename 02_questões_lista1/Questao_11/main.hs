@@ -1,5 +1,7 @@
-maioresQue y xs = 
-    filter (y <) xs
+maioresQue x [] = []
+maioresQue x xs 
+    | x < head xs = head xs:maioresQue x (tail xs)
+    | otherwise = maioresQue x (tail xs)
     
 main = do
     line1 <- getLine

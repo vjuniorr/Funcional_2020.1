@@ -1,7 +1,7 @@
-fibonacci x =
-    if x == 0 || x == 1
-        then x
-        else fibonacci (x - 1) + fibonacci (x - 2)
+fibonacci 0 = 0
+fibonacci 1 = 1
+fibonacci x = 
+    fibonacci (x - 1) + fibonacci(x - 2)
 
 main = do
     line1 <- getLine
