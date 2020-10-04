@@ -5,7 +5,7 @@ concatenaFold (x:xs) = foldl(++)x xs
 
 -- inverteFold --
 inverteFold :: [Int] -> [Int]
-inverteFold xs = foldl (\x z -> z:x)[] xs
+inverteFold xs = foldl (flip(:))[] xs 
 
 -- paridadeFold --
 paridadeFold :: [Bool] -> Bool
