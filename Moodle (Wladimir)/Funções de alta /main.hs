@@ -38,8 +38,13 @@ removeLista :: (Foldable t1, Foldable t2, Eq a) => t2 a -> t1 a -> [a]
 removeLista xs ys = foldr (\x z-> if x `notElem` xs then x:z else z ) [] ys
 
 -- acertosFold --
-{- acertosFold xs ys = 
-    foldr g v [0..tam-1] -}
+{- acertosFold xs ys = foldr g v [0..tam-1]
+
+  where
+
+  v = 0  
+
+  tam = length xs  -}
 
 -- descompactaFold -- 
 descompactaFold :: Foldable t => t (a1, a2) -> ([a1], [a2])
