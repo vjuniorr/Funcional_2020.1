@@ -34,3 +34,26 @@ instance Ord Date where
                                                         | ano2 == ano && mes2 == mes && dia2 >= dia = True
                                                         | otherwise = False
           
+
+-- PedraPapelTesoura --
+data Gesto = Pedra | Papel | Tesoura deriving (Show, Eq)
+
+ganhaDe :: Gesto -> Gesto -> Bool
+ganhaDe Pedra Tesoura   = True
+ganhaDe Pedra Papel     = False
+ganhaDe Pedra Pedra     = False
+ganhaDe Papel Pedra     = True
+ganhaDe Papel Tesoura   = False
+ganhaDe Papel Papel     = False
+ganhaDe Tesoura Papel   = True
+ganhaDe Tesoura Pedra   = False
+ganhaDe Tesoura Tesoura = False 
+
+ganhadores :: [(Gesto,Gesto)] -> [Int]
+ganhadores xs = [localiza xs x 0  | x <- xs, ganhaDe (fst x)(snd x)]
+
+localiza :: (Eq a1, Eq a2, Num t) => [(a1, a2)] -> (a1, a2) -> t -> t
+localiza (g:gs) x id 
+    | fst g == fst x && snd g == snd x = id
+    | otherwise = localiza gs x (id+1)
+
