@@ -56,4 +56,3 @@ localiza :: (Eq a1, Eq a2, Num t) => [(a1, a2)] -> (a1, a2) -> t -> t
 localiza (g:gs) x id 
     | fst g == fst x && snd g == snd x = id
     | otherwise = localiza gs x (id+1)
-
