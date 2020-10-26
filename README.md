@@ -7,6 +7,15 @@ Resolução e relatorios das atividades de Programação Funcional
 *Turma* : Programação Funcional - 2020.1<p>
 *Professor* : David Sena<p>
 # Relatorio das Atividades
+## Arcade
+### *Como fiz a atividade* :
+Fiz as questões sozinho, atraves de pesquisa no site  http://haskell.tailorfontela.com.br/chapters de algumas coisas basicas
+### *Dificuldades* :
+A principio senti muita dificuldade na sintaxe da linguagem
+### *Quanto tempo levei* : 
+Levei entre 1 e 2 horas
+
+
 ## Lista (Professor Ricardo Reis)
 ### *Como fiz a atividade* :
 Fiz algumas questões da lista sozinho e algumas com o auxilio de amigos
